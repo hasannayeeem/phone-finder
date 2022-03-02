@@ -18,12 +18,12 @@ const displaySearchResult = phones => {
         const div = document.createElement('div');
         div.classList.add('col');
         div.innerHTML = `
-        <div class="card h-100">
+        <div class="card h-100 border-0 shadow">
             <img src="${phone.image}" class="card-img-top" alt="...">
             <div class="card-body">
                <h5 class="card-title">${phone.phone_name}</h5>
                <p class="card-text">brand: ${phone.brand}</p>
-               <button onclick="loadPhonesByName('${phone.slug}')">details<?button>
+               <button class="btn__link" onclick="loadPhonesByName('${phone.slug}')">details</button>
             </div>
         </div>
         `;
